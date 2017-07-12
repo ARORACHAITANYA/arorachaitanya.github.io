@@ -10,6 +10,9 @@ h2{
   font-family: 'Abril Fatface', cursive;
 }
 
+h3{
+  font-size: 1.8rem;
+}
 .sticky-shrinknav-header-title p{
   font-size: 3vmax;
   font-family: 'Abril Fatface', cursive;
