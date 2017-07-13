@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,17 +14,38 @@
     <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
     <meta name="theme-color" content="#24cfba">
     <title>Chaitanya Arora</title><link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Nunito|Abril+Fatface" rel="stylesheet">
+
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-102446196-1', 'auto');
+
+    // Replace the following lines with the plugins you want to use.
+    ga('require', 'impressionTracker', {
+  elements: [
+    {
+      id: 'about',
+      threshold: 0.5
+    },
+    {
+      id: 'work',
+      threshold: 0.5
+    },
+    {
+      id: 'about',
+      threshold: 0.5
+    }
+  ]
+});
+    ga('require', 'maxScrollTracker');
+    ga('require', 'outboundFormTracker');
+    ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+  ga('send', 'pageview');
+  </script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+  <script async src="js/vendor/autotrack.js"></script>
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/app.css">
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-102446196-1', 'auto');
-    ga('send', 'pageview');
-    </script>
   </head>
   <body>
 
