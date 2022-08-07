@@ -1,188 +1,644 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
-    <meta name="theme-color" content="#24cfba">
-    <title>Chaitanya Arora</title><link href="https://fonts.googleapis.com/css?family=Londrina+Shadow|Nunito|Abril+Fatface" rel="stylesheet">
+<head>
+  <title>Chaitanya Arora | Hashtag Tooltips Chrome Extension | Backend Python Developer | Technical Innovation Enthusiast
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.bundle.css">
+  <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7DRG059Z4J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
 
-    <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-102446196-1', 'auto');
+  gtag('config', 'G-7DRG059Z4J');
+</script>
 
-    // Replace the following lines with the plugins you want to use.
-    ga('require', 'impressionTracker', {
-  elements: [
-    {
-      id: 'about',
-      threshold: 0.5
-    },
-    {
-      id: 'work',
-      threshold: 0.5
-    },
-    {
-      id: 'about',
-      threshold: 0.5
-    }
-  ]
-});
-    ga('require', 'maxScrollTracker');
-    ga('require', 'outboundFormTracker');
-    ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-  ga('send', 'pageview');
-  </script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script async src="js/vendor/autotrack.js"></script>
-    <link rel="stylesheet" href="css/foundation.min.css">
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
+<!-- Google tag (gtag.js) -->
 
-    <!-- STICKY NAV SHRINK HERO -->
-  <header class="sticky-shrinknav-header">
-  <h1 class="sticky-shrinknav-header-title">CHAITANYA ARORA<br><p>Student|Coder|Memer</p></h1>
-    <ul class="menu align-center sticky-shrinknav-menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </header>
-
-<!-- ABOUT SECTION -->
-  <div class="about" id="about">
-    <h2 class="heading">About<hr><br></h2>
-      <div class="media-object stack-for-small">
-        <div class="media-object-section align-self-middle">
-          <img class="thumbnail" src="img/about-me.jpg" width="200px">
-        </div>
-        <div class="media-object-section main-section">
-          <h3><b>Hey, its Chaitanya !</b></h3>
-          <p>  I am a high school student trying to explore my interests in the field of computers
-               by working on new projects and gaining knowledge from them. I am inquisitive in nature
-               and believe in simply learning to achieve my goals. Being proficient in C/C++,
-               familiar with Web Development and interested in app development, I use my passion
-               to code and work to organize coding events in school and spread the joy of coding. <br><br>
-               Also I like to make and browse memes. Thus if you wanna work on a project or simply
-               want dank memes, do contact me !!
-              </div>
+<body>
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item is-hidden-desktop">
+        <a target="_blank" href="https://github.com/arorachaitanya" class="icon is-large has-text-light">
+          <i class="fab fa-2x fa-github"></i>
+        </a>
       </div>
-  </div>
-
-<!-- WORK SECTION -->
-  <div class="work" id="work">
-    <h2>My Work<hr><br></h2>
-      <div class="row small-up-1 medium-up-2 align-center">
-        <div class="column-block column">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <img src="img/memoranddo.jpg  " class="thumb" width="200px">
-                <h2>Memoranddo</h2>
-              </div>
-              <div class="flip-card-inner-back">
-                <p class="flip-card-inner-back-text">A class 12 project which objectively aims towards
-                  testing the players observational and memory skills along with
-                  his/her sense of effective time management by flashing cards and
-                  then asking questions related to them.<br><br>
-                <mark>LANGUAGE : C++</mark></p>
-              </div>
-            </div>
+      <div class="navbar-item is-hidden-desktop">
+        <a target="_blank" href="https://blog.chaitanyaarora.com class=" icon is-large has-text-light">
+          <i class="fas fa-2x fa-globe"></i>
+        </a>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a target="_blank" href="https://github.com/arorachaitanya" class="icon is-large has-text-light">
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </div>
+        <div class="navbar-item">
+          <a target="_blank" href="https://blog.chaitanyaarora.com class=" icon is-large has-text-light">
+            <i class="fas fa-2x fa-globe"></i>
+          </a>
         </div>
       </div>
+    </div>
+  </nav>
 
-      <div class="column-block column">
-        <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-          <div class="flip-card-inner">
-            <div class="flip-card-inner-front two">
-              <img src="img/gym.jpg" class="thumb" width="200px">
-              <h2>Guess Your Mates</h2>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <div class="level">
+          <div class="level-item has-text-centered">
+            <figure class="image is-128x128">
+              <img class="is-rounded" src="img/me.png">
+            </figure>
+          </div>
+        </div>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <h1 class="title is-1">
+              Chaitanya Arora
+            </h1>
+            <h2 class="subtitle">
+              <a target="_blank" href="https://chrome.google.com/webstore/detail/hashtag-tooltips/nkjmngaageipgkolfkappfdckbiehmha">🚀 Hashtag Tooltips Chrome Extension 🚀</a> <br>🐍 Backend Python Developer 🐍 <br> ☁️ Technical Innovation Enthusiast ☁️
+            </h2>
+            <!-- <p>
+              <a href="docs/resume.txt" class="icon has-text-light">
+                <i class="fas fa-file-word"></i> <strong>Resume</strong>
+              </a>
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">About Me</h1>
+      <hr />
+      <p>I am a problem solver with an inquisitive mind who helps people boost their productivity using technology.
+        I can do a wide variety of things, including automating daily tasks, building customized software/website or simply scraping data directly into spreadsheets for further analysis</p>
+      <p> My tools have helped more than 20,000 people. Would you like to be the next one?<b> Lets discuss!</b></p>
+
+      <br>
+      <h4 class="subtitle">My Journey:-</h4>
+
+      I got introduced to computer science in school, where I built a 2000+ lines quiz game using C++ for my final year project. Thereafter, my life changed.
+      I have been building websites since my freshman year for various college startups.
+      In my junior year, I was introduced to the world of Deep Learning and Artificial Intelligence. I learned various algorithms, implementing and practicing them via competitions online.
+      My proudest moment was to finish 11<sup>th</sup> in a competition to classify different roof types from aerial imagery.
+      Subsequently, I joined India's largest diagnostic chain where i was writing scripts, securing software and building various security assessments and guidelines.
+      Currently, I am working as a Software Developer for a FinTech Startup building products and managing the ETL pipelines day in and day out.
+      <br><br>
+      My specialties include quickly learning new skills and programming languages, communicating clearly the problems and challenges to other people, and working diligently and consistently.
+      I like the freedom to implement things on my own by speaking with the consumers directly, understanding their problems, implementing them, and finally getting feedback & improvise.
+      <br>You might catch me working on problems continuously for long periods of hours without getting up from my chair or interacting with stakeholders and discussing their problems.
+      I get satisfaction when people whom I have helped acknowledge me for my work.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Experience</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-64x64" style="padding-top: 1rem;">
+                <img src="img/savii.png" alt="Placeholder image">
+              </figure>
             </div>
-            <div class="flip-card-inner-back">
-              <p class="flip-card-inner-back-text">A class 11 project that attempts to determine which classmate the
-              player is thinking of by asking them a series of questions.
-              It is based on the famous internet game 'Akinator'<br><br><br>
-              <mark>LANGUAGE : C++</mark></p>
+            <div class="media-content">
+              <p class="title is-4">Savii</p>
+              <p class="subtitle is-6">Software Developer - <time datetime="2022-3">March 2022</time> - Present </p>
+            </div>
+          </div>
+          <div class="content">
+            <p></p>
+            <ul>
+              <li>Working as a software developer in the Data Engineering team.</li>
+              <li>Responsible for maintaining ETL pipeline by working on tools like DBT, Stitch, BigQuery, etc.</li>
+              <li>Responsible for developing software backend using FastAPI to replace google sheet based trackers.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Google Bigquery</span>
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-gap">
+        <div class="card-content">
+
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="img/lal.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Dr Lal Pathlabs</p>
+              <p class="subtitle is-6">Deputy Manager Information Security - <time datetime="2020-10">October 2020</time> - <time datetime="2022-02">February 2022</time></p>
+            </div>
+          </div>
+
+
+          <div class="content">
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="subtitle is-6">Deputy Manager - <time datetime="2021-12">December 2021</time> - <time datetime="2022-02">February 2022</time></p>
+                  <ul>
+                    <li>Primarily Responsible for Software Security of the organization</li>
+                    <li>Building Dashboards on application security for senior management</li>
+                    <li>Azure DataLake Architecture Assessment</li>
+                    <li>Application maturity assessment</li>
+                    <li>Building Secure coding guidelines</li>
+                    <li>Take down of fake applications, mobile app, implementation of advisories reported by special interest service providers</li>
+                  </ul>
+                  <div class="tags">
+                    <span class="tag">Cybersecurity</span>
+                    <span class="tag">VAPT</span>
+                    <span class="tag">Secure Coding</span>
+                    <span class="tag">DataLake Security</span>
+                    <span class="tag">Project Management</span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="subtitle is-6">Management Trainee - <time datetime="2021-05">May 2021</time> - <time datetime="2021-11">November 2021</time></p>
+                  <ul>
+                    <li>Primarily Responsible for Software Security of the organisation</li>
+                    <li>Building Dashboards on application security for senior management</li>
+                    <li>Vulnerability management process design & implementation</li>
+                    <li>Overall tracking and execution of VAPT program that includes Infra, applications, medical instruments</li>
+                    <li>Security assessments for software releases</li>
+                    <li>Vendor Risk Assessment & Audits</li>
+                    <li>Security Assessment of Medical Instruments</li>
+                    <li>Take down of fake applications, mobile app, implementation of advisories reported by special interest service providers</li>
+                  </ul>
+                  <div class="tags">
+                    <span class="tag">Cybersecurity</span>
+                    <span class="tag">VAPT</span>
+                    <span class="tag">Risk Assessment</span>
+                    <span class="tag">Project Management</span>
+                    <span class="tag">Medical Instruments Security</span>
+
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <p class="subtitle is-6">Information Technology Trainee - <time datetime="2020-10">October 2020</time> - <time datetime="2021-04">April 2021</time></p>
+                  Worked on a project to automate the Onboarding Journey Experience of Phlebotomists via Computer Vision Techniques. Scanned documents like Aadhar card, PAN Card, DMLT Certificates, etc to auto populate information in onboarding forms.
+                  <ul>
+                    <li>Used OpenCV to transform the skewness and lighting of the documents</li>
+                    <li>Used Google Vision API to process documents and extract text as well as faces from them</li>
+                    <li>Wrote a python script to analyse the texts and extract useful information from the text</li>
+                  </ul>
+                  <div class="tags">
+                    <span class="tag">Google Vision AI</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">Python</span>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-<!-- CONTACT SECTION -->
-<div class="contact" id="contact">
-<h2> Contact Me <hr> </h2>
-    <div class="row column">
-      <!-- FORM STARTS -->
-      <form id="gform" method="POST" onsubmit="return validateMyForm();" action="https://script.google.com/macros/s/AKfycbyYIspcGX-F_6w6WEjJHRXzr3C3TOmyy6gaAtOw1RhNUJFew5g/exec">
-        <div class="row">
-          <div class="medium-6 column">
-            <label for="first-name"> Name </label>
-            <input type="text" id="first-name" name="First Name" placeholder="First Name">
+  <!-- <section class="section">
+    <div class="container">
+      <h1 class="title">Projects</h1>
+      <hr />
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-3by2">
+                  <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-3-modal" src="img/project-3-cover.png">
+                </figure>
+              </article>
+            </div>
           </div>
-          <div class="medium-6 column">
-            <label for="last-name"><br> </label>
-            <input type="text" id="last-name" name="Last Name" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Project title</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
+                </figure>
+              </article>
+            </div>
           </div>
         </div>
-        <div class="row column">
-          <label for="email">Email </label>
-          <input type="email" id="email" name="Email" placeholder="Email">
-        </div>
-        <div class="row column">
-          <label for="comment">Message </label>
-          <textarea id="comment" name="Comment" rows="5" placeholder="Write your message..."></textarea>
-        </div>
-        <!-- honeypot field start-->
-	       <div style="display: none;" class="row column">
-		         <label>Keep this field blank</label>
-		           <input type="text" name="honeypot" id="honeypot" >
-	       </div>
-	      <!-- honeypot field end -->
-        <button class="button contact-submit" type="submit" name="button">
-            <i class="fa fa-paper-plane"></i>&nbsp; Submit
-        </button>
-      </form>
-      <!-- FORM ENDS -->
-      <div style="display:none;" id="thankyou_message">
-        <h2>Thanks for filling out the form!
-          Will get back to you soon!</h2>
       </div>
     </div>
+  </section> -->
 
-    <!-- ROUND SOCIAL MEDIAS -->
-      <div class="row column">
-        <div class="rounded-social-buttons">
-        <ul class="menu align-center">
-          <li><a class="social-button facebook" target="_blank" href="https://www.facebook.com/chaitanyaarora1998"></a></li>
-          &nbsp;<li><a class="social-button instagram" target="_blank" href="https://www.instagram.com/chaitanyaarora/"></a></li>
-          &nbsp;<li><a class="social-button snapchat" target="_blank" href="https://www.snapchat.com/add/arorachaitanya"></a></li>
-          &nbsp;<li><a class="social-button github" target="_blank" href="https://github.com/ARORACHAITANYA"></a></li>
-          &nbsp;<li><a class="social-button gmail" target="_blank" href="mailto:arorachaitanya1@gmail.com"></a></li>
-      <!--<li><a class="social-button spotify" href="#"></a></li>
-          <li> <a class="social-button reddit" href="#"></a></li>-->
-        </ul>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Education</h1>
+      <hr />
+      <div class="card">
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Netaji Subhas Institute of Technology (NSIT) - DU</p>
+            <p class="subtitle is-6">Bachelor's of Engineering - Instrumentation and Control Engineering (ICE)<time datetime="2017-07">July 2017</time> - <time datetime="2021-05">May 2021</time></p>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Scored GPA 7.70 in Bachelor Degree</li>
+              <li>Technical Head of Entrepreneurship Cell, NSIT </li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">St. Columba's School</p>
+            <p class="subtitle is-6">Class XII <time datetime="2016"> 2016</time> </p>
+            <p class="subtitle is-6">Class X <time datetime="2014"> 2014</time> </p>
+          </div>
+          <div class="content">
+            <ul>
+              <li>Scored 99/100 in Computer Science in Class XII</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Contact</h1>
+      <hr />
+      <nav class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <a target="_blank" href="https://github.com/arorachaitanya" class="icon is-large">
+              <i class="fab fa-2x fa-github"></i>
+            </a>
+            <p class="heading"><a target="_blank" href="https://github.com/arorachaitanya">github.com/arorachaitanya</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a target="_blank" href="https://blog.chaitanyaarora.com" class="icon is-large">
+              <i class="fas fa-2x fa-globe"></i>
+            </a>
+            <p class="heading"><a target="_blank" href="https://blog.chaitanyaarora.com">blog.chaitanyaarora.com</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a target="_blank" href="mailto:chaitanyaarora.tech@gmail.com" class="icon is-large">
+              <i class="fas fa-2x fa-envelope"></i>
+            </a>
+            <p class="heading"><a target="_blank" href="mailto:chaitanyaarora.tech@gmail.com">chaitanyaarora.tech@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <a target="_blank" href="https://www.linkedin.com/in/arorachaitanya" class="icon is-large">
+              <i class="fab fa-2x fa-linkedin-in"></i>
+            </a>
+            <p class="heading"><a target="_blank" href="https://www.linkedin.com/in/arorachaitanya">linkedin</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <!-- <div id="project-1-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+
+        <div id="project-1-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
   </div>
 
+  <div id="project-2-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
 
-    <script src="https://use.fontawesome.com/5e0885b087.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+        <div id="project-2-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
 
-  </body>
+        <div class="content">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-3-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-3-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-4-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-5-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-6-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Project title</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-6-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/1.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/2.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel/3.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.</p>
+          <div class="tags">
+            <span class="tag">angular</span>
+            <span class="tag">mongo</span>
+            <span class="tag">typscript</span>
+            <span class="tag">node</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <a href="https://github.com/mmacneil/devfolio" target="_blank" class="icon has-text-primary">
+          <i class="fab fa-github"></i> <strong>devfolio</strong></a>
+      </p>
+    </div>
+  </footer> -->
+
+  <script src="js/bundle.js"></script>
+</body>
+
 </html>
