@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DRG059Z4J"></script>
   <script>
@@ -11,15 +16,27 @@
     gtag('config', 'G-7DRG059Z4J');
   </script>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chaitanya Arora · Backend engineer for payments, ledgers and lending</title>
+  <title>Chaitanya Arora · Backend engineer, payments and ledgers</title>
   <meta name="description" content="Chaitanya Arora is a Python backend engineer in Delhi NCR who builds systems that move money: payments, ledgers and lending, built to stay correct under load.">
   <link rel="canonical" href="https://chaitanyaarora.com/">
+  <meta name="author" content="Chaitanya Arora">
   <meta property="og:type" content="profile">
+  <meta property="profile:first_name" content="Chaitanya">
+  <meta property="profile:last_name" content="Arora">
+  <meta property="og:site_name" content="Chaitanya Arora">
   <meta property="og:title" content="Chaitanya Arora · Backend engineer">
-  <meta property="og:description" content="I build backend systems that move money, and make sure they stay correct when things go wrong.">
+  <meta property="og:description" content="I build transactional backend systems where being wrong is expensive: ledgers, payouts, credit decisions and approval workflows.">
   <meta property="og:url" content="https://chaitanyaarora.com/">
+  <meta property="og:locale" content="en">
+  <meta property="og:image" content="https://chaitanyaarora.com/assets/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Chaitanya Arora, backend engineer for payments, ledgers and lending">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chaitanya Arora · Backend engineer">
+  <meta name="twitter:description" content="I build transactional backend systems where being wrong is expensive: ledgers, payouts, credit decisions and approval workflows.">
+  <meta name="twitter:image" content="https://chaitanyaarora.com/assets/og-card.png">
+  <meta name="twitter:image:alt" content="Chaitanya Arora, backend engineer for payments, ledgers and lending">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -35,15 +52,51 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Chaitanya Arora",
-    "url": "https://chaitanyaarora.com/",
-    "jobTitle": "Backend Engineer",
-    "email": "mailto:chaitanyaarora.tech@gmail.com",
-    "address": { "@type": "PostalAddress", "addressRegion": "Delhi NCR", "addressCountry": "IN" },
-    "alumniOf": "Netaji Subhas Institute of Technology",
-    "knowsAbout": ["Python", "PostgreSQL", "Payments", "Ledgers", "Distributed systems", "Lending systems", "Search"],
-    "sameAs": ["https://www.linkedin.com/in/arorachaitanya"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://chaitanyaarora.com/#website",
+        "url": "https://chaitanyaarora.com/",
+        "name": "Chaitanya Arora",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://chaitanyaarora.com/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://chaitanyaarora.com/#person",
+        "name": "Chaitanya Arora",
+        "url": "https://chaitanyaarora.com/",
+        "mainEntityOfPage": "https://chaitanyaarora.com/",
+        "jobTitle": "Backend Engineer",
+        "description": "Python backend engineer in Delhi NCR who builds transactional systems where being wrong is expensive: ledgers, payouts, credit decisions and approval workflows.",
+        "email": "chaitanyaarora.tech@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Delhi NCR",
+          "addressCountry": "IN"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Netaji Subhas Institute of Technology"
+        },
+        "knowsAbout": [
+          "Python",
+          "PostgreSQL",
+          "OLTP",
+          "Concurrency control",
+          "Payments",
+          "Ledgers",
+          "Distributed systems",
+          "Lending systems",
+          "Search"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/arorachaitanya"
+        ]
+      }
+    ]
   }
   </script>
 </head>
