@@ -109,6 +109,8 @@
       <a class="site-name" href="/">Chaitanya Arora</a>
       <nav class="site-nav" aria-label="Main">
         <a href="#experience">Experience</a>
+        <a href="#independent">Independent</a>
+        <a href="#how">How I work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -150,11 +152,10 @@
             <span class="role-dates">Jan 2026 – present</span>
           </div>
           <p class="role-title">Software Development Engineer III, Enterprise Payments · contract · Remote / Delhi NCR</p>
-          <p class="role-context">The backend of the enterprise payments platform behind GoTyme Bank in the
-            Philippines and TymeBank in South Africa: accounts, pay-ins and payouts for business clients. These are
-            business accounts, not consumer ones. Instead of activity spread across millions of accounts, a few
-            accounts take heavy concurrent writes, so the system is OLTP and has to stay consistent and correct under
-            contention.</p>
+          <p class="role-context">Backend services for the enterprise payments platform behind GoTyme Bank in the
+            Philippines and TymeBank in South Africa: accounts, pay-ins and payouts for business clients. Unlike
+            consumer banking, where activity spreads across millions of accounts, a few business accounts take heavy
+            concurrent writes, so the system is OLTP and has to stay consistent under contention.</p>
           <ul>
             <li>Built the balance-ledger service from an empty repository to production.</li>
             <li>Designed the payout service's state machine, written up in a decision record the team adopted, and
@@ -162,8 +163,8 @@
             <li>Traced a latency collapse in the Java payout service to a synchronized logger rather than the database,
               and fixed it with asynchronous logging.</li>
             <li>Ran the benchmarks behind the team's datastore decisions, for the ledger and for transaction search.</li>
-            <li>Building the backend for the client portal.</li>
-            <li>Rewrote the team's logging standard, and gave technical sessions to the engineers.</li>
+            <li>Now building the backend for the client portal.</li>
+            <li>Rewrote the team's logging standard and gave technical sessions to the engineers.</li>
           </ul>
           <ul class="tags" aria-label="Tools">
             <li>Python</li><li>FastAPI</li><li>Java (Spring Boot)</li><li>PostgreSQL</li><li>DynamoDB</li><li>SQS</li><li>EventBridge</li><li>ECS Fargate</li><li>event-driven services</li>
@@ -234,8 +235,8 @@
       <div class="wrap">
         <p class="eyebrow">Independent work</p>
         <h2>As a sole proprietor</h2>
-        <p class="section-intro">I also run a small practice of my own: a product I build and license, a consulting
-          engagement, and two browser extensions.</p>
+        <p class="section-intro">I also run a small practice of my own: a product I build and license, consulting
+          work, and two browser extensions.</p>
 
         <article class="role">
           <div class="role-head">
@@ -246,12 +247,12 @@
           <ul>
             <li>Built, and still run, the vendor-invoice portal PVR INOX's accounts payable works through. Vendors
               submit invoices against purchase orders and track them through approval and goods receipt to payment.</li>
-            <li>An eight-stage invoice lifecycle and a separate vendor-advance state machine, approval chains that route
-              each invoice by amount, and purchase-order balance, duplicate and GSTIN checks at submission, with a full
-              audit trail.</li>
-            <li>Role-based access for vendors and five kinds of employee, scoped by location and department. Master data,
-              approval workflows and ERP payment files load in bulk by CSV, and one payment can cover several invoices or
-              part of one.</li>
+            <li>Built an eight-stage invoice lifecycle and a separate vendor-advance state machine, approval chains that
+              route each invoice by amount, and purchase-order balance, duplicate and GSTIN checks at submission, with
+              a full audit trail.</li>
+            <li>Added role-based access for vendors and five kinds of employee, scoped by location and department. Master
+              data, approval workflows and ERP payment files load in bulk by CSV, and one payment can cover several
+              invoices or part of one.</li>
             <li>Moved its ERP integration from Navision to SAP.</li>
           </ul>
           <ul class="tags" aria-label="Tools">
